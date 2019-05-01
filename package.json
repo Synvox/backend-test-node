@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node -r esm node_modules/.bin/micro index.js",
+    "start": "knex migrate:latest && node -r esm node_modules/.bin/micro-dev index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@synvox/router": "^0.1.5",
+    "axios": "^0.18.0",
+    "esm": "^3.2.22",
+    "knex": "^0.16.5",
+    "micro": "^9.3.3",
+    "micro-dev": "^3.0.0",
+    "sqlite3": "^4.0.6"
+  }
+}
